@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CHMÁQUINA v2019</title>
+    <link rel="stylesheet" href="resources\css\styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="user">
+        <div class="options">
+            M/K |
+            &nbsp;&nbsp;
+            <input type="number" placeholder="Memory" class="inputs" onchange="changeMemory()">
+            <input type="number" placeholder="Kernel" class="inputs" onchange="changeKernel()">
+            <input type="button" value="Apply" class="inputs" onclick="apply()">
+            <input type="button" value="Check file" class="inputs" onclick="getCode()">
+            <input type="button" value="Compile" class="inputs" onclick="getInstructions()">
+            <input type="button" value="Step by step" class="inputs">
+        </div>
+        <textarea class="app" placeholder=">>> Insert your code here"></textarea>
+    </div>
+    <div class="split">
+    </div>
+    <textarea readonly="readonly" class="console">
+Console
+user>>> Awaiting system to be initialized
+user>>> System initializing ok
+user>>> Compiling...
+user>>> Compiled successfully
+    </textarea>
+    <nav>
+        <ul>
+            <li>
+                New |
+            </li>
+            <li>
+                Load file |
+            </li>
+            <li>
+                Save |
+            </li>
+            <li>
+                Add app |
+            </li>
+            <li>
+                Memory
+            </li>
+            <li>
+                Kernel mode
+            </li>
+        </ul>
+    </nav>
+    <script src="resources\js\coding.js"></script>
+</body>
+
+</html>
